@@ -9,6 +9,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WindowsFormsApp1
 {
@@ -38,7 +39,7 @@ namespace WindowsFormsApp1
             
             
             button4.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 3, button4.Width, button4.Height, buttonRadius, buttonRadius));
-            button2.Region= System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 3, button2.Width, button2.Height, buttonRadius, buttonRadius));
+            button2.Region= System.Drawing.Region.FromHrgn(CreateRoundRectRgn(1, 2, button2.Width, button2.Height, buttonRadius, buttonRadius));
             button3.Region= System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 3, button3.Width, button3.Height, buttonRadius, buttonRadius));
 
 
@@ -49,7 +50,10 @@ namespace WindowsFormsApp1
             panel3.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 3, panel3.Width, panel3.Height, 15, 15));
             panel3.BackColor = verdeacqua;
 
-            
+
+            progressBar1.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, progressBar1.Width, progressBar1.Height, 7, 7));
+
+
             textBox1.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 1, textBox1.Width, textBox1.Height, 15, 15));
             //textBox1.BackColor = beg;
             textBox2.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 1, textBox2.Width, textBox2.Height, 15, 15));
@@ -86,17 +90,17 @@ namespace WindowsFormsApp1
             textBox1.Text = "";
         }
 
-        private void b1_Click(object sender, EventArgs e, TextBox tb)
-        {
-            String s = tb.Text;
-            setClear(tb);
-            MessageBox.Show(s);
-        }
+       // private void b1_Click(object sender, EventArgs e, TextBox tb)
+      //  {
+       //     String s = tb.Text;
+      //      setClear(tb);
+      //     MessageBox.Show(s);
+       // }
 
-        private void setClear(TextBox tb)
-        {
-            tb.Text = "";
-        }
+      //  private void setClear(TextBox tb)
+       // {
+       //     tb.Text = "";
+       // }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -136,11 +140,11 @@ namespace WindowsFormsApp1
 
        
 
-        private void Button_SizeChanged(object sender, EventArgs e)
-        {
-            Button button = (Button)sender;
-            button.Region = Region.FromHrgn(CreateRoundRectRgn(2, 3, button.Width, button.Height, buttonRadius, buttonRadius));
-        }
+       // private void Button_SizeChanged(object sender, EventArgs e)
+        //{
+       //     Button button = (Button)sender;
+       //     button.Region = Region.FromHrgn(CreateRoundRectRgn(2, 3, button.Width, button.Height, buttonRadius, buttonRadius));
+       // }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {

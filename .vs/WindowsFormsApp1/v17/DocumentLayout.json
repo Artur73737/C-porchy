@@ -21,7 +21,7 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 21,
+          "DockedWidth": 27,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -31,7 +31,7 @@
           ]
         },
         {
-          "DockedWidth": 126,
+          "DockedWidth": 120,
           "SelectedChildIndex": 1,
           "Children": [
             {
@@ -46,7 +46,7 @@
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
               "ToolTip": "C:\\Users\\loren\\source\\repos\\WindowsFormsApp1\\WindowsFormsApp1\\Form1.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Form1.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAwwEcAAAAJAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAADUAAACHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-04T18:49:28.945Z",
               "EditorCaption": ""
@@ -71,7 +71,7 @@
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.Designer.cs",
               "ToolTip": "C:\\Users\\loren\\source\\repos\\WindowsFormsApp1\\WindowsFormsApp1\\Form1.Designer.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Form1.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAANsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-05T17:32:55.559Z",
               "EditorCaption": ""
