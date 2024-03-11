@@ -19,6 +19,7 @@ namespace WindowsFormsApp1
         Color verdeacqua = Color.FromArgb(67, 118, 108);
         Color marroncino = Color.FromArgb(118, 69, 59);
         Color beg = Color.FromArgb(177, 148, 112);
+        Color nero = Color.FromArgb(255,255,255);
 
         [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         private static extern IntPtr CreateRoundRectRgn(
@@ -34,17 +35,12 @@ namespace WindowsFormsApp1
             button2.Click += new EventHandler(clickbtn2);
             button3.Click += new EventHandler(clickbtn3);
             button4.Click += new EventHandler(clickbtn4);
-            button1.BackColor = marroncino;
-            button2.BackColor = marroncino;
-            button3.BackColor = marroncino;
-            button4.BackColor = marroncino;
-            button5.BackColor = marroncino;
-            button6.BackColor = marroncino;
-            button7.BackColor = marroncino;
-            button8.BackColor = marroncino;
+            
+            
             button4.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 3, button4.Width, button4.Height, buttonRadius, buttonRadius));
             button2.Region= System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 3, button2.Width, button2.Height, buttonRadius, buttonRadius));
             button3.Region= System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 3, button3.Width, button3.Height, buttonRadius, buttonRadius));
+
 
             panel1.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 3, panel1.Width, panel1.Height, 15, 15));
             panel1.BackColor = verdeacqua;
@@ -55,39 +51,38 @@ namespace WindowsFormsApp1
 
             
             textBox1.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 1, textBox1.Width, textBox1.Height, 15, 15));
-            textBox1.BackColor = beg;
-
-           
+            //textBox1.BackColor = beg;
             textBox2.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 1, textBox2.Width, textBox2.Height, 15, 15));
-            textBox2.BackColor = beg;
-
-            
+            //textBox2.BackColor = beg;
             textBox3.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 1, textBox3.Width, textBox3.Height, 15, 15));
-            textBox3.BackColor = beg;
+            //textBox3.BackColor = beg;
 
 
-            Class1 a = new Class1("ascasdad", 3);
+            label1.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(2, 3, label1.Width, label1.Height, buttonRadius, buttonRadius));
+
+
+
         }
 
         private void clickbtn4(object sender, EventArgs e)
         {
-            String s = textBox3.Text;
-            listBox1.Items.Add(s);
+            String s = label1.Text + "\n" + textBox3.Text;
+            label1.Text = s;
             textBox3.Text = "";
         }
 
         private void clickbtn3(object sender, EventArgs e)
         {
-            String s = textBox2.Text;
-            listBox1.Items.Add(s);
+            String s = label1.Text + "\n" + textBox2.Text;
+            label1.Text = s;
             textBox2.Text = "";
         }
 
         private void clickbtn2(object sender, EventArgs e)
         {
-            Class1 a = new Class1("ascasdad", 3);
-            String s = textBox1.Text;
-            listBox1.Items.Add(s);
+
+            String s = label1.Text + "\n" + textBox1.Text;
+            label1.Text = s;
             textBox1.Text = "";
         }
 
@@ -153,6 +148,11 @@ namespace WindowsFormsApp1
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click_2(object sender, EventArgs e)
         {
 
         }

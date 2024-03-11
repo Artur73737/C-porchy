@@ -45,14 +45,10 @@ namespace WindowsFormsApp1
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ciao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pippo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,18 +104,21 @@ namespace WindowsFormsApp1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(8, 40);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(8, 39);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox3
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.textBox3.BackColor = System.Drawing.Color.DarkTurquoise;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(20, 107);
+            this.textBox3.Location = new System.Drawing.Point(20, 109);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 5;
@@ -127,7 +126,7 @@ namespace WindowsFormsApp1
             // 
             // textBox2
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.textBox2.BackColor = System.Drawing.Color.DarkTurquoise;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Location = new System.Drawing.Point(20, 65);
             this.textBox2.Name = "textBox2";
@@ -138,7 +137,7 @@ namespace WindowsFormsApp1
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.textBox1.BackColor = System.Drawing.Color.DarkTurquoise;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Location = new System.Drawing.Point(20, 22);
             this.textBox1.Name = "textBox1";
@@ -150,80 +149,49 @@ namespace WindowsFormsApp1
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Green;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(158, 107);
+            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ImageKey = "(nessuno)";
+            this.button4.Location = new System.Drawing.Point(159, 102);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.Size = new System.Drawing.Size(76, 25);
             this.button4.TabIndex = 2;
-            this.button4.Text = "button4";
+            this.button4.Text = "INVIA";
             this.button4.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Green;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Location = new System.Drawing.Point(158, 65);
+            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(159, 60);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.Size = new System.Drawing.Size(76, 25);
             this.button3.TabIndex = 1;
-            this.button3.Text = "button3";
+            this.button3.Text = "INVIA";
             this.button3.UseVisualStyleBackColor = false;
             // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Green;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Green;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Location = new System.Drawing.Point(158, 22);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(76, 25);
             this.button2.TabIndex = 0;
-            this.button2.Text = "button2";
+            this.button2.Text = "INVIA";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.listBox1);
+            this.panel2.BackColor = System.Drawing.Color.Gray;
+            this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(713, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(259, 537);
             this.panel2.TabIndex = 1;
-            // 
-            // listBox1
-            // 
-            this.listBox1.BackColor = System.Drawing.Color.Green;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(0, 0);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(259, 537);
-            this.listBox1.TabIndex = 0;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.DimGray;
-            this.dataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Sunken;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.ciao,
-            this.pippo});
-            this.dataGridView1.GridColor = System.Drawing.Color.Green;
-            this.dataGridView1.Location = new System.Drawing.Point(282, 22);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(242, 240);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ciao
-            // 
-            this.ciao.HeaderText = "ciao";
-            this.ciao.Name = "ciao";
-            // 
-            // pippo
-            // 
-            this.pippo.HeaderText = "pippo";
-            this.pippo.Name = "pippo";
             // 
             // panel3
             // 
@@ -231,7 +199,6 @@ namespace WindowsFormsApp1
             this.panel3.Controls.Add(this.button4);
             this.panel3.Controls.Add(this.textBox3);
             this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.dataGridView1);
             this.panel3.Controls.Add(this.button2);
             this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.textBox1);
@@ -240,6 +207,18 @@ namespace WindowsFormsApp1
             this.panel3.Size = new System.Drawing.Size(598, 537);
             this.panel3.TabIndex = 2;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(14, 11);
+            this.label1.Name = "label1";
+            this.label1.Padding = new System.Windows.Forms.Padding(10);
+            this.label1.Size = new System.Drawing.Size(233, 514);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "TESTO";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label1.Click += new System.EventHandler(this.label1_Click_2);
             // 
             // Form1
             // 
@@ -255,7 +234,6 @@ namespace WindowsFormsApp1
             this.Text = "sdferf";
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -278,16 +256,13 @@ namespace WindowsFormsApp1
         private TextBox textBox3;
         private TextBox textBox2;
         private TextBox textBox1;
-        private ListBox listBox1;
-        private DataGridView dataGridView1;
         private Panel panel3;
-        private DataGridViewTextBoxColumn ciao;
-        private DataGridViewTextBoxColumn pippo;
         private Button button8;
         private Button button7;
         private Button button6;
         private Button button5;
         private Button button1;
+        private Label label1;
     }
 }
 
